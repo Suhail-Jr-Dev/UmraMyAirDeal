@@ -1,0 +1,42 @@
+/* umrapackage\src\assetss\HeroSection\herobg.svg */
+.thirdHeroSection {
+    background-image:
+        linear-gradient(rgba(32, 41, 59, 0.6), rgba(32, 41, 59, 0.6)),
+        url('../assetss/UmraTravelPkg/thirdHeroSection.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-top: 3.5rem; */
+}
+
+.imgShadow {
+    box-shadow: -10px 10px 0px 0px #d4aa66;
+}
+
+.contShadow {
+    box-shadow: -10px 9px 0px 0px #d4aa66;
+    border: 2px solid #d4aa66;
+    border-top: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.carousel-item {
+    overflow: hidden;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
