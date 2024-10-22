@@ -67,7 +67,7 @@ function EnquiryFormPopUp() {
     };
 
     return (
-        <div className={`w-full sm:w-11/12 lg:w-[30%] p-4`}>
+        <div className={`w-full sm:w-11/12 lg:w-[30%] p-4`} onClick={(e) => e.stopPropagation()} >
             <div className="bg-white rounded-lg overflow-hidden shadow-lg ">
                 {/* Form Header */}
                 <div className="bg-gray-900 text-white text-center py-3 rounded-t-lg">
