@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { EnquiryPopContext } from '../Contexts/EnquiryPopContext';
 
+import '../Styles/EnquiryForm.css'
+
 function EnquiryForm() {
 
     let [isFormOpen, setFormOpen] = useContext(EnquiryPopContext);
@@ -34,7 +36,7 @@ function EnquiryForm() {
             message: formData.message
         };
 
-       
+
 
         // Send the POST request to your API endpoint
         try {
@@ -65,15 +67,15 @@ function EnquiryForm() {
     };
 
     return (
-        <div className={`w-full sm:w-11/12 md:w-9/12 lg:w-[40%] p-4`}>
-            <div className="bg-white rounded-lg shadow-lg ">
+        <div className={`w-full sm:w-11/12 md:w-9/12 lg:w-[40%] p-4 `}>
+            <div className="bg-white rounded-lg shadow-lg">
                 {/* Form Header */}
-                <div className="bg-gray-900 text-white text-center py-3 rounded-t-lg">
+                <div className="bg-gray-900 text-white text-center lg:w-[33rem] lg:-translate-x-[0.7rem] py-3 lg:rounded-lg rounded-t-lg">
                     <h1 className="text-lg font-bold">ENQUIRY NOW</h1>
                 </div>
 
                 {/* Form Body */}
-                <div className="bg-white p-6">
+                <div className=" p-6 visaForm ">
                     <form onSubmit={handleSubmit}>
                         {/* Name Input */}
                         <div className="mb-4">
@@ -83,7 +85,7 @@ function EnquiryForm() {
                                 placeholder="Name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-gray-500"
+                                className="w-full px-3 py-2 border-[2px] border-hoverColor rounded-md focus:outline-none focus:border-gray-500"
                                 required
                             />
                         </div>
@@ -96,7 +98,7 @@ function EnquiryForm() {
                                 placeholder="Email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-gray-500"
+                                className="w-full px-3 py-2 border-[2px] border-hoverColor rounded-md focus:outline-none focus:border-gray-500"
                                 required
                             />
                         </div>
@@ -109,7 +111,7 @@ function EnquiryForm() {
                                 placeholder="Phone Number"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-gray-500"
+                                className="w-full px-3 py-2 border-[2px] border-hoverColor rounded-md focus:outline-none focus:border-gray-500"
                                 required
                             />
                         </div>
@@ -121,7 +123,7 @@ function EnquiryForm() {
                                 placeholder="Message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                className="w-full px-3 py-2 resize-none border border-gray-300 rounded-md focus:outline-none focus:border-gray-500"
+                                className="w-full px-3 py-2 resize-none border-[2px] border-hoverColor rounded-md focus:outline-none focus:border-gray-500"
                                 rows="4"
                                 required
                             ></textarea>

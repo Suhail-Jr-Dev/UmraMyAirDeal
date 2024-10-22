@@ -4,6 +4,8 @@ import hajj from '../assetss/UmrahFeatures/hajj.svg'
 import time from '../assetss/UmrahFeatures/time.svg'
 import viza from '../assetss/UmrahFeatures/viza.svg'
 
+import '../Styles/UmrahFeatures.css'
+
 function UmrahFeatures() {
     return (
         <div className="flex flex-col items-center justify-center px-6 py-12">
@@ -15,7 +17,7 @@ function UmrahFeatures() {
             {/* Feature Cards Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
                 {/* Card 1: Guided Umrah Packages */}
-                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                <div className="bg-white rounded-lg shadow-md p-6 text-center hover:scale-105 transition-all duration-300 cursor-pointer cssShadow">
                     <div className=' h-[10rem] flex items-center  justify-center'>
                         <img
                             src={hajj}// Replace with actual image URL
@@ -32,7 +34,7 @@ function UmrahFeatures() {
                 </div>
 
                 {/* Card 2: Seamless Visa Processing */}
-                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                <div className="bg-white rounded-lg shadow-md p-6 text-center hover:scale-105 transition-all duration-300 cursor-pointer cssShadow">
                     <div className=' h-[10rem] flex items-center  justify-center'>
                         <img
                             src={viza} // Replace with actual image URL
@@ -49,7 +51,7 @@ function UmrahFeatures() {
                 </div>
 
                 {/* Card 3: 24/7 Customer Support */}
-                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                <div className="bg-white rounded-lg shadow-md p-6 text-center hover:scale-105 transition-all duration-300 cursor-pointer cssShadow">
                     <div className=' h-[10rem] flex items-center justify-center'>
                         <img
                             src={time} // Replace with actual image URL

@@ -1,0 +1,10 @@
+/* umrapackage\src\assetss\HeroSection\herobg.svg */
+.visaForm {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+        url('../assetss/Visa/Umrah.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-top: 3.5rem; */
+}

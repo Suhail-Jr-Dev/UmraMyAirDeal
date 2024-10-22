@@ -20,7 +20,7 @@ function LandingPage() {
 
     return (
         <div className='relative'>
-            <div className={`${isFormOpen ? 'fixed' : 'hidden'} inset-0 bg-gray-800 bg-opacity-50 z-40 pointer-events-auto flex items-center justify-center`} onClick={()=>{setFormOpen(false)}}>
+            <div className={`${isFormOpen ? 'fixed' : 'hidden'} inset-0 bg-gray-800 bg-opacity-50 z-40 pointer-events-auto flex items-center justify-center`} onClick={() => { setFormOpen(false) }}>
                 <EnquiryFormPopUp />
             </div>
             <NavBar />  {/**Used Context Api */}

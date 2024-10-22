@@ -43,27 +43,27 @@ function SocialMediaBar() {
             <div className='flex text-white w-full lg:w-[25rem] flex-wrap items-center justify-around mb-2 lg:mb-0'>
                 <div className='flex items-center gap-2 justify-center'>
                     <img src={mail} alt="Email" className='w-4 lg:w-[0.8rem]' />
-                    <Link to={EmailContent} target="_blank" className='text-[0.9rem] lg:text-[1rem]'>myairdeal24@gmail.com</Link>
+                    <Link to={EmailContent} target="_blank" className='cursor-pointer text-[0.9rem] lg:text-[1rem]'>myairdeal24@gmail.com</Link>
                 </div>
-                <div className='flex items-center gap-2 justify-center'>
-                    <img src={phone} alt="Phone" className='w-4 lg:w-[0.8rem]' />
-                    <p className='text-[0.9rem] lg:text-[1rem]' onClick={handleContactClick} >{phoneNumber}</p>
+                <div className='flex items-center gap-2 justify-center '>
+                    <img src={phone} alt="Phone" className='w-4  lg:w-[0.8rem]' />
+                    <p className='text-[0.9rem] lg:text-[1rem] cursor-pointer' onClick={handleContactClick} >{phoneNumber}</p>
                 </div>
             </div>
 
             {/* Social Media Icons */}
             <div className='hidden md:flex gap-3 flex-wrap justify-center lg:justify-end'>
-                <Link to={'https://www.facebook.com/profile.php?id=61561003964312'} target='_blank' className='bg-socialMedia flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
-                    <FaFacebookF className='fill-white w-4 h-4' />
+                <Link to={'https://www.facebook.com/profile.php?id=61561003964312'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
+                    <FaFacebookF className='hover:fill-hoverColor fill-white w-4 h-4' />
                 </Link >
-                <Link to={'https://in.linkedin.com/company/my-air-deal'} target='_blank' className='bg-socialMedia flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
-                    <FaLinkedinIn className='fill-white w-4 h-4' />
+                <Link to={'https://in.linkedin.com/company/my-air-deal'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
+                    <FaLinkedinIn className='hover:fill-hoverColor fill-white w-4 h-4' />
                 </Link>
-                <Link to={'https://www.instagram.com/myairdeal/'} target='_blank' className='bg-socialMedia flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
-                    <FaInstagram className='fill-white w-4 h-4' />
+                <Link to={'https://www.instagram.com/myairdeal/'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
+                    <FaInstagram className='hover:fill-hoverColor fill-white w-4 h-4' />
                 </Link>
-                <Link to={'https://twitter.com/'} target='_blank' className='bg-socialMedia flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
-                    <FaXTwitter className='fill-white w-4 h-4' />
+                <Link to={'https://twitter.com/'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
+                    <FaXTwitter className='hover:fill-hoverColor fill-white w-4 h-4' />
                 </Link>
 
             </div>
