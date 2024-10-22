@@ -40,3 +40,53 @@
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
+.themeSwitcherTwo {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 60px; /* Adjust the width */
+    height: 34px; /* Adjust the height */
+    border-radius: 34px; /* Rounded corners */
+    background-color: #ccc; /* Default background color */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.slider .dot {
+    position: absolute;
+    top: 50%;
+    left: 4px; /* Distance from the left when "off" */
+    transform: translateY(-50%); /* Center the dot vertically */
+    width: 26px; /* Adjust the size of the dot */
+    height: 26px; /* Adjust the size of the dot */
+    border-radius: 50%; /* Circular shape */
+    background-color: white; /* Dot color */
+    transition: left 0.3s; /* Smooth transition for dot movement */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for the dot */
+}
+
+/* When the toggle is checked */
+input:checked + .slider {
+    background-color: #4CAF50; /* Change the background color when checked */
+}
+
+input:checked + .slider .dot {
+    left: calc(100% - 30px); /* Move the dot to the right */
+}
+
+/* Text colors */
+.slider .absolute {
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+input:checked + .slider .absolute {
+    color: white; /* Change text color when checked */
+}
+
+/* Hover effect */
+.slider:hover {
+    background-color: #999; /* Change background on hover */
+}

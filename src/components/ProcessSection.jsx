@@ -1,5 +1,9 @@
 import React from 'react';
-import backgroundImage from '../assetss/ProcessSection/processkaba.svg'; // Path to your background image
+import backgroundImage from '../assetss/ProcessSection/processkaba.svg';
+
+import one from '../assetss/ProcessSection/one.png'
+import two from '../assetss/ProcessSection/two.png'
+import three from '../assetss/ProcessSection/three.png'
 
 const ProcessSection = () => {
     return (
@@ -28,7 +32,7 @@ const ProcessSection = () => {
                 <div className="relative z-10 flex flex-col items-center justify-center gap-12 md:gap-16 lg:gap-24 text-white">
                     {/* Step 1 */}
                     <div className="flex flex-col md:flex-row items-center text-black space-x-0 md:space-x-6  p-4 rounded-md w-full max-w-[20rem] sm:max-w-[25rem] md:max-w-[30rem]">
-                        <span className="text-[3rem] sm:text-[4rem] font-bold">01</span>
+                        <img src={one} alt="one" className="w-[3rem] sm:w-[12rem]" />
                         <div className="text-center md:text-left">
                             <h3 className="text-[1.5rem] sm:text-[2rem] font-semibold">Choose Package</h3>
                             <p className="text-[1.1rem] sm:text-[1.3rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus luctus.</p>
@@ -37,7 +41,7 @@ const ProcessSection = () => {
 
                     {/* Step 2 */}
                     <div className="flex flex-col md:flex-row items-center text-black space-x-0 md:space-x-6  p-4 rounded-md w-full max-w-[20rem] sm:max-w-[25rem] md:max-w-[30rem]">
-                        <span className="text-[3rem] sm:text-[4rem] font-bold">02</span>
+                        <img src={two} alt="two" className="w-[3rem] sm:w-[12rem]" />
                         <div className="text-center md:text-left">
                             <h3 className="text-[1.5rem] sm:text-[2rem] font-semibold">Fill Your Documents</h3>
                             <p className="text-[1.1rem] sm:text-[1.3rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus luctus.</p>
@@ -46,7 +50,9 @@ const ProcessSection = () => {
 
                     {/* Step 3 */}
                     <div className="flex flex-col md:flex-row items-center text-black space-x-0 md:space-x-6  p-4 rounded-md w-full max-w-[20rem] sm:max-w-[25rem] md:max-w-[30rem]">
-                        <span className="text-[3rem] sm:text-[4rem] font-bold">03</span>
+
+                        <img src={three} alt="three" className="w-[3rem] sm:w-[12rem]" />
+
                         <div className="text-center md:text-left">
                             <h3 className="text-[1.5rem] sm:text-[2rem] font-semibold">Enjoy Your Travel</h3>
                             <p className="text-[1.1rem] sm:text-[1.3rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus luctus.</p>

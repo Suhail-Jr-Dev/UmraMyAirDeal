@@ -33,27 +33,27 @@ const FeaturesSection = () => {
                     {/* Feature List */}
                     <div className="flex flex-col gap-[4rem]">
                         {/* Feature Item */}
-                        <div className="flex items-center space-x-4">
+                        <div className="flex items-center flex-col md:flex-row space-x-4">
                             <img src={bus} className="w-10 h-10" alt="Bus Icon" />
                             <span className="text-base sm:text-lg">Transport services pickup and drop.</span>
                         </div>
 
-                        <div className="flex items-center space-x-4">
+                        <div className="flex items-center flex-col md:flex-row space-x-4">
                             <img src={food} className="w-10 h-10" alt="Food Icon" />
                             <span className="text-base sm:text-lg">Bangalore and Hyderabad buffet served three times daily.</span>
                         </div>
 
-                        <div className="flex items-center space-x-4">
+                        <div className="flex items-center flex-col md:flex-row space-x-4">
                             <img src={washing} className="w-10 h-10" alt="Washing Icon" />
                             <span className="text-base sm:text-lg">Laundry once in Mecca and once in Madina.</span>
                         </div>
 
-                        <div className="flex items-center space-x-4">
+                        <div className="flex items-center flex-col md:flex-row space-x-4">
                             <img src={map} className="w-10 h-10" alt="Map Icon" />
                             <span className="text-base sm:text-lg">Tour Guide.</span>
                         </div>
 
-                        <div className="flex items-center space-x-4">
+                        <div className="flex items-center flex-col md:flex-row space-x-4">
                             <img src={water} className="w-8 h-8" alt="Water Icon" />
                             <span className="text-base sm:text-lg">5 ltr of Zam Zam water as a complimentary.</span>
                         </div>

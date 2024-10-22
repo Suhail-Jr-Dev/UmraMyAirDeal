@@ -1,0 +1,15 @@
+.threeDNumber {
+    position: relative;
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+}
+
+.threeDNumber::before {
+
+    text-shadow: 3px 3px black,
+        10px 13px green,
+        33px 23px orange,
+    ;
+
+}

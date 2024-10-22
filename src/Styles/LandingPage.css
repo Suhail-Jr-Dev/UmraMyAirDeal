@@ -1,0 +1,18 @@
+/* LandingPage.css */
+.overflow-hidden {
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Optional: Overlay styles */
+.fixed {
+    position: fixed;
+    z-index: 30;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.opacity-50 {
+    opacity: 0.5; /* Semi-transparent */
+}

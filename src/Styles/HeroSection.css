@@ -1,4 +1,4 @@
-/* umrapackage\src\assetss\HeroSection\herobg.svg */
+/* umrapackage\src\assetss\HeroSection\herobg.svg
 .heroSection {
     background-image:
         linear-gradient(rgba(32, 41, 59, 0.6), rgba(32, 41, 59, 0.6)),
@@ -6,5 +6,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* margin-top: 3.5rem; */
+} */
+
+.heroSection {
+    position: relative;
+    overflow: hidden;
+    /* Ensure nothing overflows outside the section */
+}
+
+/* Optional: add some shadow to text for better visibility */
+.text-white {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }

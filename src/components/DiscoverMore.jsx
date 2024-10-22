@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Styles/DiscoverMore.css';
 import { FaArrowRight } from "react-icons/fa6";
+import { EnquiryPopContext } from '../Contexts/EnquiryPopContext';
 
 function DiscoverMore() {
+
+    let [isFormOpen, setFormOpen] = useContext(EnquiryPopContext); {/**Used Context Api */ }
+
+
     return (
-        <div className='secondHeroSection flex items-center justify-center h-[50vh]'>
+        <div className='secondHeroSection flex items-center justify-center py-10 h-auto'>
             <div className='flex text-white gap-5 flex-col items-center justify-center text-center px-4'>
                 {/* Discover More Title */}
                 <h2 className='text-lg md:text-xl font-semibold'>DISCOVER MORE</h2>
@@ -25,7 +30,7 @@ function DiscoverMore() {
                 </p>
 
                 {/* Button Section */}
-                <button className='bg-hoverColor flex items-center justify-center gap-3 px-8 py-2 rounded-lg text-base md:text-lg'>
+                <button className='bg-hoverColor hover:scale-105 hover:duration-300 transition-all mt-14 flex items-center justify-center gap-3 px-8 py-2 rounded-lg text-base md:text-lg' onClick={() => { setFormOpen(true) }}>
                     ENQUIRY NOW
                     <FaArrowRight />
                 </button>

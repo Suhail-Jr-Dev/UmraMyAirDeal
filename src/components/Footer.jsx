@@ -1,7 +1,8 @@
 import React from 'react';
-import { FaLinkedinIn, FaTwitter, FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn, FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { TfiLocationPin } from 'react-icons/tfi'; // Importing location pin icon
 import { Link } from 'react-router-dom'; // Make sure to import Link for routing
+import { FaXTwitter } from "react-icons/fa6";
 
 import logo from '../assetss/whiteLogo.png';
 
@@ -75,17 +76,17 @@ function Footer() {
                 <div className="flex flex-col w-[20rem] mb-6">
                     <h1 className="text-lg text-hoverColor font-semibold mb-2">Follow Us</h1>
                     <div className="flex flex-wrap gap-3 ">
-                        <Link to={'https://www.facebook.com/profile.php?id=61561003964312'} target='_blank' className='bg-socialMedia flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
-                            <FaFacebook className='fill-white w-4 h-4' />
+                        <Link to={'https://www.facebook.com/profile.php?id=61561003964312'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
+                            <FaFacebook className='fill-white w-4 hover:fill-hoverColor h-4' />
                         </Link>
-                        <Link to={'https://www.instagram.com/myairdeal/'} target='_blank' className='bg-socialMedia flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
-                            <FaInstagram className='fill-white w-4 h-4' />
+                        <Link to={'https://www.instagram.com/myairdeal/'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
+                            <FaInstagram className='fill-white hover:fill-hoverColor w-4 h-4' />
                         </Link>
-                        <Link to={'https://in.linkedin.com/company/my-air-deal'} target='_blank' className='bg-socialMedia flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
-                            <FaLinkedinIn className='fill-white w-4 h-4' />
+                        <Link to={'https://in.linkedin.com/company/my-air-deal'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
+                            <FaLinkedinIn className='fill-white hover:fill-hoverColor w-4 h-4' />
                         </Link>
-                        <Link to={'https://twitter.com/'} target='_blank' className='bg-socialMedia flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
-                            <FaTwitter className='fill-white w-4 h-4' />
+                        <Link to={'https://twitter.com/'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
+                            <FaXTwitter className='fill-white hover:fill-hoverColor w-4 h-4' />
                         </Link>
 
                     </div>
