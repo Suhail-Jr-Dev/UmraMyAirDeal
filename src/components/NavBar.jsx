@@ -22,7 +22,7 @@ function NavBar() {
                 {/* Navigation Links for Desktop */}
                 <div className='hidden lg:flex text-gray-500 font-semibold items-center gap-9'>
                     <Link to={'https://packageweb.onrender.com'} target='_blank' className='hover:text-black transition-colors duration-300 cursor-pointer'>Package</Link>
-                    <Link to={'/billingpage'} target='_blank' className='hover:text-black transition-colors duration-300 cursor-pointer'>VISA</Link>
+                    <Link to={'/billingpage'}  className='hover:text-black transition-colors duration-300 cursor-pointer'>VISA</Link>
 
                     {/* Enquiry Button */}
                     <button className='bg-hoverColor hover:scale-105 hover:duration-300 transition-all  rounded-md tracking-[0.1rem] text-white px-5 py-2 hover:bg-hoverColor-dark duration-300' onClick={() => { setFormOpen(true) }}>
