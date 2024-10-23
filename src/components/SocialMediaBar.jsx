@@ -17,7 +17,7 @@ function SocialMediaBar() {
     const EmailContent = "https://mail.google.com/mail/?view=cm&fs=1&to=support@bookmyjet.com&su=Inquiry%20About%20Your%20Services&body=Hello%2C%0D%0A%0D%0AI%20am%20interested%20in%20learning%20more%20about%20your%20services.%20Please%20provide%20me%20with%20additional%20information.%0D%0A%0D%0AThank%20you!"
 
 
-    const phoneNumber = '+971 49398393';
+    const phoneNumber = '8884466800';
     const copyToClipboard = () => {
         navigator.clipboard.writeText(phoneNumber).then(() => {
             message.success('Phone number copied to clipboard');
@@ -43,7 +43,7 @@ function SocialMediaBar() {
             <div className='flex text-white w-full lg:w-[25rem] flex-wrap items-center justify-around mb-2 lg:mb-0'>
                 <div className='flex items-center gap-2 justify-center'>
                     <img src={mail} alt="Email" className='w-4 lg:w-[0.8rem]' />
-                    <Link to={EmailContent} target="_blank" className='cursor-pointer text-[0.9rem] lg:text-[1rem]'>myairdeal24@gmail.com</Link>
+                    <Link to={EmailContent} target="_blank" className='cursor-pointer text-[0.9rem] lg:text-[1rem]'>support@myairdeal.com</Link>
                 </div>
                 <div className='flex items-center gap-2 justify-center '>
                     <img src={phone} alt="Phone" className='w-4  lg:w-[0.8rem]' />

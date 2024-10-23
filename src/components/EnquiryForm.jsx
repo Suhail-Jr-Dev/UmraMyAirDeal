@@ -59,6 +59,13 @@ function EnquiryForm() {
             //     alert('Failed to submit the form.');
             // }
 
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                message: ''
+            })
+
             console.log(dataToSend)
         } catch (error) {
             console.error('Error submitting the form', error);
@@ -70,12 +77,12 @@ function EnquiryForm() {
         <div className={`w-full sm:w-11/12 md:w-9/12 lg:w-[40%] p-4 `}>
             <div className="bg-white rounded-lg shadow-lg">
                 {/* Form Header */}
-                <div className="bg-gray-900 text-white text-center lg:w-[33rem] lg:-translate-x-[0.7rem] py-3 lg:rounded-lg rounded-t-lg">
+                <div className="bg-gray-900 text-white text-center py-3 lg:rounded-t-lg rounded-t-lg">
                     <h1 className="text-lg font-bold">ENQUIRY NOW</h1>
                 </div>
 
                 {/* Form Body */}
-                <div className=" p-6 visaForm ">
+                <div className=" p-6 ">
                     <form onSubmit={handleSubmit}>
                         {/* Name Input */}
                         <div className="mb-4">

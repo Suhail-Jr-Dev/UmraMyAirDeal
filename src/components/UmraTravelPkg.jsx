@@ -164,6 +164,10 @@ function UmraTravelPkg() {
                                 {/* Package Features */}
                                 <div className='flex flex-col justify-center gap-3'>
                                     <h1 className='flex gap-2 items-center border-white border-b-2 py-2'>
+                                        <img src={clothes} alt="" className='w-6' />
+                                        <span>{data.days} <span className='font-bold'>Days</span> </span>
+                                    </h1>
+                                    <h1 className='flex gap-2 items-center border-white border-b-2 py-2'>
                                         <img src={water} alt="" className='w-4 ' />
                                         <span>{data.water}</span>
                                     </h1>
@@ -175,6 +179,7 @@ function UmraTravelPkg() {
                                         <img src={clothes} alt="" className='w-6' />
                                         <span>{data.clothes}</span>
                                     </h1>
+
                                 </div>
 
                                 {/* Button */}

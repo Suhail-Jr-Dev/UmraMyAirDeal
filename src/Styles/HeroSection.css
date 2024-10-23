@@ -1,20 +1,47 @@
-/* umrapackage\src\assetss\HeroSection\herobg.svg
-.heroSection {
-    background-image:
-        linear-gradient(rgba(32, 41, 59, 0.6), rgba(32, 41, 59, 0.6)),
-        url('../assetss/HeroSection/herobg.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+/* Mobile Portrait (heroBannerMB.png for vertical mobile) */
+@media (max-width: 760px) and (orientation: portrait) {
+    .heroSection {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0), rgba(81, 41, 41, 0)),
+            url('../assetss/HeroSection/verticalHero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-top: 3.5rem; */
+    }
+}
 
-.heroSection {
+/* Mobile Landscape (heroBanner.png for horizontal mobile) */
+@media (max-width: 760px) and (orientation: landscape) {
+    .heroSection {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0), rgba(81, 41, 41, 0)),
+            url('../assetss/HeroSection/landscapeHero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-top: 3.5rem; */
+    }
+}
+
+
+/* iPad, Mac, Desktop, Laptop (heroBanner.png for larger screens) */
+@media (min-width: 761px) {
+    .heroSection {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0), rgba(81, 41, 41, 0)),
+            url('../assetss/HeroSection/landscapeHero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* .heroSection {
     position: relative;
     overflow: hidden;
-    /* Ensure nothing overflows outside the section */
 }
 
-/* Optional: add some shadow to text for better visibility */
 .text-white {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
+} */

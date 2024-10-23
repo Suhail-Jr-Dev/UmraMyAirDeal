@@ -1,7 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import logo from '../assetss/NavBar/logo.png';
 import { EnquiryPopContext } from '../Contexts/EnquiryPopContext';
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 
 function NavBar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,6 +12,10 @@ function NavBar() {
     };
 
     const [isFormOpen, setFormOpen] = useContext(EnquiryPopContext)
+
+
+   
+
     return (
         <div className='flex items-center p-3 justify-center bg-white shadow-md relative'>
             <div className='flex w-[94%] items-center justify-between'>
@@ -22,7 +27,7 @@ function NavBar() {
                 {/* Navigation Links for Desktop */}
                 <div className='hidden lg:flex text-gray-500 font-semibold items-center gap-9'>
                     <Link to={'https://packageweb.onrender.com'} target='_blank' className='hover:text-black transition-colors duration-300 cursor-pointer'>Package</Link>
-                    <Link to={'/billingpage'}  className='hover:text-black transition-colors duration-300 cursor-pointer'>VISA</Link>
+                    <Link to={'/billingpage'} className='hover:text-black transition-colors duration-300 cursor-pointer'>VISA</Link>
 
                     {/* Enquiry Button */}
                     <button className='bg-hoverColor hover:scale-105 hover:duration-300 transition-all  rounded-md tracking-[0.1rem] text-white px-5 py-2 hover:bg-hoverColor-dark duration-300' onClick={() => { setFormOpen(true) }}>
