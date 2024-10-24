@@ -24,7 +24,7 @@ function Ratings() {
                 {/* Happy Traveler Section */}
                 <div className='flex items-center justify-center flex-col px-5 mb-6 lg:mb-0'>
                     <h1 className='text-[2rem] flex sm:text-[2.2rem] lg:text-[2.9vw] font-bold text-hoverColor'>
-                        <Number n={35} />K+
+                        <Number n={1000} />K+
                     </h1>
                     <h2 className='text-[0.9rem] sm:text-[1rem] text-gray-600'>HAPPY TRAVELER</h2>
                 </div>
@@ -35,7 +35,7 @@ function Ratings() {
                 {/* Success Traveler Section */}
                 <div className='flex items-center justify-center flex-col px-5 mb-6 lg:mb-0'>
                     <h1 className='text-[2rem] flex sm:text-[2.2rem] lg:text-[2.9vw] font-bold text-hoverColor'>
-                        <Number n={82} />%
+                        <Number n={90} />%
                     </h1>
                     <h2 className='text-[0.9rem] sm:text-[1rem] text-gray-600'>SUCCESS TRAVELER</h2>
                 </div>
@@ -46,7 +46,7 @@ function Ratings() {
                 {/* Rating Clients Section */}
                 <div className='flex items-center justify-center flex-col px-5 mb-6 lg:mb-0'>
                     <h1 className='text-[2rem] sm:text-[2.2rem] lg:text-[2.9vw] font-bold text-hoverColor'>
-                        <Number n={9.1} />
+                        <Number n={9.5} />
                     </h1>
                     <h2 className='text-[0.9rem] sm:text-[1rem] text-gray-600'>RATING CLIENTS</h2>
                 </div>
