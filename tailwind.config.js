@@ -16,7 +16,8 @@ module.exports = {
         error: '#d4c583',
         primary: '#1DA1F2',
         socialMedia: '#364054',
-        booking : '#fff2d7'
+        booking : '#fff2d7',
+        umraPkg : '#ffe5ad',
       },
       screens: {
         '344': '344px',

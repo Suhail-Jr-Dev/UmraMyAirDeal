@@ -5,6 +5,7 @@ import UmraPackages from '../UmraPackages/UmraPackages';
 import clothes from '../assetss/UmraTravelPkg/clothes.png';
 import food from '../assetss/UmraTravelPkg/food.png';
 import water from '../assetss/UmraTravelPkg/water.svg';
+import days from '../assetss/UmraTravelPkg/days.png';
 
 import { IoStarSharp } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
@@ -53,8 +54,8 @@ function UmraTravelPkg() {
     });
 
     return (
-        <div className='thirdHeroSection relative flex flex-col py-[4rem] items-center justify-center my-10 px-4 sm:px-10'>
-            <div className='absolute bg-hoverColor w-full h-[37rem] bottom-0'></div>
+        <div className='thirdHeroSection relative flex flex-col py-[4rem] items-center justify-center my-5 lg:mt-10 px-4 sm:px-10'>
+            <div className='absolute bg-white w-full  h-[34.9rem] bottom-0'></div>
 
             {/* Carousel Controls */}
             <button
@@ -71,7 +72,7 @@ function UmraTravelPkg() {
                 <MdKeyboardArrowRight className="h-10 w-10 fill-white" />
             </button>
 
-            <div className='bg-booking w-full py-10 lg:max-w-[64%] rounded-xl flex flex-col items-center'>
+            <div className='bg-booking z-10 w-full py-10 lg:max-w-[64%] rounded-[3rem] flex flex-col items-center'>
                 {/* Title */}
                 <div className='text-center mb-6 px-6'>
                     <h1 className='text-lg sm:text-2xl font-semibold text-gray-800'>Discover Our Unique Umrah Travel Packages</h1>
@@ -99,7 +100,7 @@ function UmraTravelPkg() {
                 {/* Card Section */}
                 <div
                     ref={carouselRef}
-                    className="flex overflow-x-auto no-scrollbar gap-10 px-4 md:px-10 scroll-smooth w-full relative"
+                    className="flex overflow-x-auto no-scrollbar py-3 gap-12 px-4 md:px-10 scroll-smooth w-full relative"
                 >
                     {packagesData?.map((data, index) => (
                         <div
@@ -117,7 +118,7 @@ function UmraTravelPkg() {
                             </div>
 
                             {/* Content Section */}
-                            <div className='bg-hoverColor text-center w-full px-6 py-6 gap-3 flex flex-col contShadow'>
+                            <div className='bg-umraPkg text-center w-full px-6 py-6 gap-3 flex flex-col contShadow'>
                                 {/* Toggle Switch */}
                                 <div className='flex items-center justify-end'>
                                     <p className='mx-2'>Flights :</p>
@@ -147,7 +148,7 @@ function UmraTravelPkg() {
                                 </div>
 
                                 {/* Package Info */}
-                                <div className='border-white h-[6.5] lg:h-[5rem] border-b-2 border-dashed pb-2'>
+                                <div className=' h-[6.5] lg:h-[5rem] border-b-2 border-dashed border-gray-600 pb-2'>
                                     <h1 className='font-bold text-lg'>{data.title}</h1>
                                     <p className='text-sm'>
                                         {data.description}
@@ -163,19 +164,19 @@ function UmraTravelPkg() {
 
                                 {/* Package Features */}
                                 <div className='flex flex-col justify-center gap-3'>
-                                    <h1 className='flex gap-2 items-center border-white border-b-2 py-2'>
-                                        <img src={clothes} alt="" className='w-6' />
+                                    <h1 className='flex gap-2 items-center border-gray-600  border-b-2 px-2 py-2'>
+                                        <img src={days} alt="" className='w-6' />
                                         <span>{data.days} <span className='font-bold'>Days</span> </span>
                                     </h1>
-                                    <h1 className='flex gap-2 items-center border-white border-b-2 py-2'>
+                                    <h1 className='flex gap-2 items-center border-gray-600  border-b-2 px-2 py-2'>
                                         <img src={water} alt="" className='w-4 ' />
                                         <span>{data.water}</span>
                                     </h1>
-                                    <h1 className='flex gap-2 items-center border-white border-b-2 py-2'>
+                                    <h1 className='flex gap-2 items-center border-gray-600  border-b-2 px-2 py-2'>
                                         <img src={food} alt="" className='w-6' />
                                         <span>{data.food}</span>
                                     </h1>
-                                    <h1 className='flex gap-2 items-center border-white border-b-2 py-2'>
+                                    <h1 className='flex gap-2 items-center border-gray-600  border-b-2 px-2 py-2'>
                                         <img src={clothes} alt="" className='w-6' />
                                         <span>{data.clothes}</span>
                                     </h1>
