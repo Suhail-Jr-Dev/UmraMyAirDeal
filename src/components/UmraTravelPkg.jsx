@@ -119,7 +119,7 @@ function UmraTravelPkg() {
                             {/* Content Section */}
                             <div className='bg-hoverColor text-center w-full px-6 py-6 gap-3 flex flex-col contShadow'>
                                 {/* Toggle Switch */}
-                                <div className='flex items-center justify-end'>
+                                <div className='flex items-center flex-wrap justify-end'>
                                     <p className='mx-2'>Flights :</p>
                                     <label className="inline-flex overflow-hidden items-center relative cursor-pointer">
                                         <input

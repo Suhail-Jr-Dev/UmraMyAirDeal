@@ -73,7 +73,7 @@ function Footer() {
                 </div>
 
                 {/* Follow Us Section */}
-                <div className="flex flex-col w-[20rem] mb-6">
+                <div className="flex flex-col w-auto lg:w-[20rem] mb-6">
                     <h1 className="text-lg text-hoverColor font-semibold mb-2">Follow Us</h1>
                     <div className="flex flex-wrap gap-3 ">
                         <Link to={'https://www.facebook.com/profile.php?id=61561003964312'} target='_blank' className='bg-socialMedia  flex items-center justify-center w-8 h-8 cursor-pointer rounded-full'>
