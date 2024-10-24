@@ -16,7 +16,7 @@ function App() {
           <SocialMediaBar />
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/billingpage" element={<BillingPage />} />
+            <Route path="/visa" element={<BillingPage />} />
           </Routes>
           <Footer />
         </Router>

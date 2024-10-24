@@ -17,10 +17,10 @@ function DiscoverMore() {
                 {/* Main Heading Section */}
                 <div className='flex flex-col items-center'>
                     <h1 className='font-bold text-2xl md:text-3xl lg:text-4xl'>
-                        Purposeful Journeys: MyAirDeal
+                        Purposeful Journeys:
                     </h1>
                     <h1 className='font-bold text-2xl md:text-3xl lg:text-4xl'>
-                        Commitment to Umrah Excellence
+                        MyAirDeal Commitment to Umrah Excellence
                     </h1>
                 </div>
 

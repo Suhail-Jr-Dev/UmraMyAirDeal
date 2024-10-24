@@ -54,7 +54,7 @@ function UmraTravelPkg() {
     });
 
     return (
-        <div className='thirdHeroSection relative flex flex-col py-[4rem] items-center justify-center my-5 lg:mt-10 px-4 sm:px-10'>
+        <div id='UmrahPkgId' className='thirdHeroSection relative flex flex-col py-[4rem] items-center justify-center my-5 lg:mt-10 px-4 sm:px-10'>
             <div className='absolute bg-white w-full  h-[34.9rem] bottom-0'></div>
 
             {/* Carousel Controls */}
@@ -184,7 +184,7 @@ function UmraTravelPkg() {
                                 </div>
 
                                 {/* Button */}
-                                <button className='bg-brandCol py-3 my-3 text-white rounded-lg hover:bg-hoverColorLight transition' onClick={() => { setFormOpen(true) }}  >
+                                <button className='bg-brandCol hover:scale-105 transition-all duration-300  py-3 my-3 text-white rounded-lg hover:bg-hoverColorLight' onClick={() => { setFormOpen(true) }}  >
                                     Enquire Now
                                 </button>
                             </div>

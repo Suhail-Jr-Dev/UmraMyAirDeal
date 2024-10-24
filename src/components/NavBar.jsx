@@ -25,8 +25,8 @@ function NavBar() {
 
                 {/* Navigation Links for Desktop */}
                 <div className='hidden lg:flex text-gray-500 font-semibold items-center gap-9'>
-                    <Link to={'https://packageweb.onrender.com'} target='_blank' className='hover:text-black transition-colors duration-300 cursor-pointer'>Package</Link>
-                    <Link to={'/billingpage'} className='hover:text-black transition-colors duration-300 cursor-pointer'>VISA</Link>
+                    <a href='#UmrahPkgId' className='hover:text-black transition-colors duration-300 cursor-pointer'>Package</a>
+                    <Link to={'/visa'} className='hover:text-black transition-colors duration-300 cursor-pointer'>VISA</Link>
 
                     {/* Enquiry Button */}
                     <button className='bg-hoverColor hover:scale-105 hover:duration-300 transition-all  rounded-md tracking-[0.1rem] text-white px-5 py-2 hover:bg-hoverColor-dark duration-300' onClick={() => { setFormOpen(true) }}>
@@ -49,7 +49,7 @@ function NavBar() {
             {isMobileMenuOpen && (
                 <div className='absolute top-14 left-0 lg:hidden  right-0  flex flex-col items-center bg-white shadow-md mt-2 py-3 z-10'>
                     <Link to={'https://packageweb.onrender.com'} target='_blank' className='text-gray-500 font-semibold py-2 hover:text-black transition-colors duration-300 cursor-pointer w-full text-center'>Package</Link>
-                    <Link to={'/billingpage'} className='text-gray-500 font-semibold py-2 hover:text-black transition-colors duration-300 cursor-pointer w-full text-center'>VISA</Link>
+                    <Link to={'/visa'} className='text-gray-500 font-semibold py-2 hover:text-black transition-colors duration-300 cursor-pointer w-full text-center'>VISA</Link>
                     <button className='bg-hoverColor rounded-md tracking-[0.1rem] text-white w-[50%] py-2  px-2 hover:bg-hoverColor-dark transition-all duration-300' onClick={() => { setFormOpen(true) }} >
                         ENQUIRY NOW
                     </button>

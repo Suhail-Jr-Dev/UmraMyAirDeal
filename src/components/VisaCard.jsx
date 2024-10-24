@@ -1,6 +1,6 @@
 import React from "react";
 import lablePice from '../assetss/VisaCard/lablePice.svg';
-import logo from '../assetss/whiteLogo.png'
+import logo from '../assetss/BillingSection/logo.png'
 
 const VisaCard = () => {
   return (

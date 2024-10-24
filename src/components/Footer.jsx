@@ -16,7 +16,7 @@ function Footer() {
 
     return (
         <div className="bg-brandCol mt-10  py-10">
-            <div className="flex flex-col w-full lg:flex-row justify-between gap-8 mx-auto px-5">
+            <div className="flex flex-col w-full lg:flex-row justify-between gap-8 mx-auto px-14">
                 {/* Company Description */}
                 <div className="flex-1 mb-6">
                     <img src={logo} alt="MyAirDeal Logo" className="mb-4 w-32 md:w-40" /> {/* Responsive logo size */}
@@ -49,13 +49,13 @@ function Footer() {
             </div>
 
             {/* Address and Social Media Section */}
-            <div className="flex flex-col lg:flex-row justify-between gap-8 py-10 mx-auto px-5">
+            <div className="flex flex-col lg:flex-row justify-between gap-8 py-10 mx-auto px-14">
                 {/* Location India */}
                 <div className="flex text-white items-start gap-2 mb-6">
-                    <TfiLocationPin className="text-2xl text-gray-700" />
+                    <TfiLocationPin className="text-2xl text-white" />
                     <div>
                         <h1 className="text-lg text-hoverColor font-semibold">INDIA</h1>
-                        <p className="underline cursor-pointer hover:text-blue-500 text-sm md:text-base" onClick={MyAirDealHandleClick}>
+                        <p className="underline cursor-pointer text-sm md:text-base" onClick={MyAirDealHandleClick}>
                             2nd Floor, Anjali Plaza, Jayanagar, Bangaluru, India - 560076
                         </p>
                     </div>
@@ -63,10 +63,10 @@ function Footer() {
 
                 {/* Location Dubai */}
                 <div className="flex items-start text-white gap-2 mb-6">
-                    <TfiLocationPin className="text-2xl text-gray-700" />
+                    <TfiLocationPin className="text-2xl text-white" />
                     <div>
                         <h1 className="text-lg text-hoverColor font-semibold">DUBAI - UAE</h1>
-                        <p className="underline cursor-pointer hover:text-blue-500 text-sm md:text-base" onClick={MyAirDealHandleClick}>
+                        <p className="underline cursor-pointer  text-sm md:text-base" onClick={MyAirDealHandleClick}>
                             I 10, Block 1, Phase 1, Saih Shuaib 2, Dubai, UAE.
                         </p>
                     </div>
