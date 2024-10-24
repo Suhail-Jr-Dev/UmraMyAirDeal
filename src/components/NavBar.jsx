@@ -50,7 +50,7 @@ function NavBar() {
                 <div className='absolute top-14 left-0 lg:hidden  right-0  flex flex-col items-center bg-white shadow-md mt-2 py-3 z-10'>
                     <Link to={'https://packageweb.onrender.com'} target='_blank' className='text-gray-500 font-semibold py-2 hover:text-black transition-colors duration-300 cursor-pointer w-full text-center'>Package</Link>
                     <Link to={'/billingpage'} className='text-gray-500 font-semibold py-2 hover:text-black transition-colors duration-300 cursor-pointer w-full text-center'>VISA</Link>
-                    <button className='bg-hoverColor rounded-md tracking-[0.1rem] text-white w-[40%] py-2  px-2 hover:bg-hoverColor-dark transition-all duration-300' onClick={() => { setFormOpen(true) }} >
+                    <button className='bg-hoverColor rounded-md tracking-[0.1rem] text-white w-[50%] py-2  px-2 hover:bg-hoverColor-dark transition-all duration-300' onClick={() => { setFormOpen(true) }} >
                         ENQUIRY NOW
                     </button>
                 </div>
