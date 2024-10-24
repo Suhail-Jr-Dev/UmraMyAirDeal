@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import logo from '../assetss/NavBar/logo.png';
 import { EnquiryPopContext } from '../Contexts/EnquiryPopContext';
 import { Link } from 'react-router-dom';
-import axios from 'axios'
 
 function NavBar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,7 +13,7 @@ function NavBar() {
     const [isFormOpen, setFormOpen] = useContext(EnquiryPopContext)
 
 
-   
+
 
     return (
         <div className='flex items-center p-3 justify-center bg-white shadow-md relative'>
@@ -44,7 +43,6 @@ function NavBar() {
                         </svg>
                     </button>
                 </div>
-
             </div>
 
             {/* Mobile Menu */}
