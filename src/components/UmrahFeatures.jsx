@@ -1,8 +1,8 @@
 import React from 'react';
 
-import hajj from '../assetss/UmrahFeatures/hajj.svg'
-import time from '../assetss/UmrahFeatures/time.svg'
-import viza from '../assetss/UmrahFeatures/viza.svg'
+import hajj from '../assetss/UmrahFeatures/tour-guide.png'
+import time from '../assetss/UmrahFeatures/24-7.png'
+import viza from '../assetss/UmrahFeatures/visa.png'
 
 import '../Styles/UmrahFeatures.css'
 
@@ -22,7 +22,7 @@ function UmrahFeatures() {
                         <img
                             src={hajj}// Replace with actual image URL
                             alt="Guided Umrah"
-                            className="mx-auto my-5  flex items-center justify-center w-[10rem]  h-[8rem]"
+                            className="mx-auto my-5  flex items-center justify-center w-[7rem]  h-[6rem]"
                         />
                     </div>
                     <h2 className="text-lg font-semibold text-gray-800 mb-4">Guided Umrah Packages</h2>
@@ -39,7 +39,7 @@ function UmrahFeatures() {
                         <img
                             src={viza} // Replace with actual image URL
                             alt="Visa Processing"
-                            className="mx-auto my-5  w-[10rem]  h-[8rem]"
+                            className="mx-auto my-5  w-[7rem]  h-[6rem]"
                         />
                     </div>
                     <h2 className="text-lg font-semibold text-gray-800 mb-4">Seamless Visa Processing</h2>
@@ -56,7 +56,7 @@ function UmrahFeatures() {
                         <img
                             src={time} // Replace with actual image URL
                             alt="Customer Support"
-                            className="mx-auto my-5  w-[10rem] h-[8rem]"
+                            className="mx-auto my-5  w-70rem] h-[6rem]"
                         />
                     </div>
                     <h2 className="text-lg font-semibold text-gray-800 mb-4">24/7 Customer Support</h2>
