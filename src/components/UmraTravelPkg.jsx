@@ -108,7 +108,7 @@ function UmraTravelPkg() {
                             className='relative w-[95%] sm:w-[25rem] mx-auto flex-shrink-0 flex flex-col items-center justify-center rounded-lg '
                         >
                             {/* Image */}
-                            <img src={cardImg} alt="" className='h-[15rem] w-full rounded-t-full imgShadow object-cover' />
+                            <img src={data?.img} alt="" className='h-[15rem] w-full rounded-t-full imgShadow object-cover' />
 
                             {/* Price Tag */}
                             <div className="absolute top-[5.5rem] sm:top-[7rem] right-[-2rem] bg-hoverColor w-[7rem] sm:w-[8rem] text-sm text-white py-1 px-[0.5rem] sm:px-2 rounded-bl-lg flex flex-col items-center">

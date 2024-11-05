@@ -1,3 +1,8 @@
+import one from '../assetss/UmraTravelPkg/one.jpg'
+import two from '../assetss/UmraTravelPkg/two.jpg'
+import three from '../assetss/UmraTravelPkg/three.jpeg'
+import four from '../assetss/UmraTravelPkg/four.jpg'
+
 const UmraPackages = [
     {
         no: {
@@ -8,6 +13,7 @@ const UmraPackages = [
             water: 'Zam Zam',
             price: 26500,
             days: 15,
+            img : one,
         },
         yes: {
             title: 'Super Deluxe Land Package',
@@ -17,6 +23,7 @@ const UmraPackages = [
             water: 'Zam Zam',
             price: 35000,
             days: 20,
+            img : one,
         },
     },
     {
@@ -28,6 +35,7 @@ const UmraPackages = [
             water: 'Zam Zam',
             price: 17500,
             days: 15,
+            img : two,
         },
         yes: {
             title: 'Economy Land Package',
@@ -37,6 +45,7 @@ const UmraPackages = [
             water: 'Zam Zam',
             price: 23500,
             days: 20,
+            img : two,
         },
     },
     {
@@ -48,6 +57,7 @@ const UmraPackages = [
             water: 'Zam Zam',
             price: 22500,
             days: 15,
+            img : three,
         },
         yes: {
             title: 'Land Package',
@@ -57,6 +67,7 @@ const UmraPackages = [
             water: 'Zam Zam',
             price: 31000,
             days: 20,
+            img : three,
         },
     },
     {
@@ -68,6 +79,7 @@ const UmraPackages = [
             water: 'Zam Zam',
             price: 26500,
             days: 15,
+            img : four,
         },
         yes: {
             title: 'Land Package',
@@ -77,6 +89,7 @@ const UmraPackages = [
             water: 'Zam Zam',
             price: 36000,
             days: 20,
+            img : four,
         },
     },
 ]
