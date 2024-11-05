@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import logo from '../assetss/NavBar/logo.png';
+import logo from '../assetss/LandingLogo.png';
 import { EnquiryPopContext } from '../Contexts/EnquiryPopContext';
 import { Link } from 'react-router-dom';
 
